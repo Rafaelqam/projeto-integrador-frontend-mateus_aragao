@@ -185,3 +185,43 @@ footer {
   color: #4b5563;
   font-size: 0.875rem;
 }
+
+/* Atualização visual: Flexbox, Grid, pseudo-classes e foco visível (aulas 06/07). */
+:root { --cor-texto: #172554; --cor-borda: #c7d2fe; --sombra-card: 0 0.65rem 1.75rem rgba(30,64,175,.10); }
+html { scroll-behavior: smooth; }
+body { color: var(--cor-texto); background: radial-gradient(circle at top left,#bfdbfe 0%,#eef2ff 55%,#dbeafe 100%); }
+.container { max-width: 75rem; margin: 1.5rem auto; padding: clamp(1rem,4vw,3rem); }
+header > p { max-width: 48rem; margin: 1rem auto 2rem; }
+.navegacao { display: flex; flex-wrap: wrap; justify-content: center; gap: .7rem; margin: 1.5rem 0 2.5rem; }
+.navegacao a { padding: .75rem 1rem; border-radius: 999px; background: #eff6ff; font-weight: 700; text-decoration: none; }
+.navegacao a:hover { background: #dbeafe; transform: translateY(-2px); }
+.navegacao a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible { outline: .2rem solid #f59e0b; outline-offset: .2rem; }
+.secao-catalogo { padding: clamp(1rem,3vw,2rem); border-radius: 1.5rem; background: linear-gradient(160deg,#f8fbff,#eef2ff); border: 1px solid var(--cor-borda); }
+.cabecalho-catalogo { text-align: center; }
+.sobretitulo { font-size: .8rem; font-weight: 800; letter-spacing: .13em; color: #4338ca; }
+.cabecalho-catalogo h2 { margin: .7rem 0; font-size: clamp(1.6rem,3vw,2.25rem); }
+.cabecalho-catalogo p { margin: 0 auto 1.5rem; }
+.controles-catalogo { display: flex; align-items: end; flex-wrap: wrap; gap: 1rem; }
+.controles-catalogo .campo { flex: 1 1 13rem; margin: 0; }
+.controles-catalogo input, .controles-catalogo select { width: 100%; background: white; }
+.controles-catalogo button { min-height: 2.75rem; }
+.resumos { display: flex; flex-wrap: wrap; justify-content: space-between; gap: .5rem; margin: 1.2rem 0; }
+.resumos p { margin: 0; font-size: .95rem; font-weight: 700; }
+.grade-pokemon { display: grid; grid-template-columns: repeat(auto-fit,minmax(min(100%,14rem),1fr)); gap: 1rem; padding: 0; margin: 0; list-style: none; }
+.pokemon-card { padding: 1.15rem; background: white; border: 1px solid #e2e8f0; border-top: .3rem solid #94a3b8; border-radius: 1rem; box-shadow: var(--sombra-card); transition: transform .18s ease,box-shadow .18s ease; }
+.pokemon-card:hover { transform: translateY(-4px); box-shadow: 0 .9rem 2rem rgba(30,64,175,.16); }
+.pokemon-card:nth-child(even) { background: #fafbff; }
+.pokemon-card.tipo-grama { border-top-color: #22c55e; }
+.pokemon-card.tipo-fogo { border-top-color: #f97316; }
+.pokemon-card.tipo-agua { border-top-color: #38bdf8; }
+.pokemon-card-topo { display: flex; align-items: center; justify-content: space-between; gap: .5rem; }
+.etiqueta { font-size: .8rem; font-weight: 800; padding: .25rem .6rem; background: #eef2ff; border-radius: 999px; }
+.geracao { font-size: .8rem; color: #475569; }
+.pokemon-card h3 { margin: 1rem 0 .4rem; font-size: 1.25rem; }
+.pokemon-card p { text-align: left; font-size: .95rem; margin: 0 0 1rem; }
+.favoritar { padding: .65rem .9rem; border: 1px solid #a5b4fc; border-radius: .65rem; color: #3730a3; background: #eef2ff; font-weight: 700; cursor: pointer; }
+.favoritar[aria-pressed="true"], #alternar-favoritos[aria-pressed="true"] { background: #312e81; color: white; }
+.vazio { grid-column: 1/-1; text-align: center; padding: 2rem; background: white; border-radius: 1rem; }
+#retorno-avaliacao { margin-top: 1rem; font-size: .95rem; }
+@media (max-width: 40rem) { .container { margin: 0; border-radius: 0; } .resumos { flex-direction: column; } }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } .pokemon-card, .navegacao a { transition: none; } }

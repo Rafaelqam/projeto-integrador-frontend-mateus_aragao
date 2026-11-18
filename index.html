@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="css/style.css">
 
   <title>Wiki dos Pokémon Iniciais</title>
+  <script src="js/catalogo.js" defer></script>
 </head>
 
 <body>
@@ -20,6 +21,11 @@
       <p>Este projeto apresenta os Pokémon iniciais de várias gerações, mostrando tipos, regiões e informações principais de forma simples e organizada.</p>
     </header>
 
+    <nav class="navegacao" aria-label="Navegação principal">
+      <a href="#catalogo">Explorar iniciais</a>
+      <a href="#video">Vídeo</a>
+      <a href="#avaliacao">Avaliar</a>
+    </nav>
     <main>
 
       <section>
@@ -90,7 +96,7 @@
         </video>
       </section>
 
-      <section class="card">
+      <section id="avaliacao" class="card">
         <h2>Avalie seu Pokémon Inicial Favorito</h2>
 
         <form>
@@ -139,6 +145,7 @@
             </div>
 
             <button class="botao" type="submit">Enviar avaliação</button>
+            <p id="retorno-avaliacao" role="status" aria-live="polite"></p>
           </fieldset>
         </form>
       </section>
