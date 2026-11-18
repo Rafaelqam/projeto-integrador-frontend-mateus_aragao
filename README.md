@@ -16,8 +16,6 @@ Projeto Integrador de Desenvolvimento Front-end para Web. Uma wiki dedicada aos 
 - **CSS3:** reset, variáveis, box model, Flexbox, Grid responsivo, pseudo-classes e estados de foco (aulas 06–07).
 - **JavaScript:** arrays de objetos, funções, condições, `switch`, `filter`, `map`, `reduce`, criação segura com `createElement`/`textContent`, eventos e delegação com `closest` e `dataset` (aulas 09, 11 e 12).
 
-## Como executar
-Abra `index.html` em um navegador moderno. Não é necessário instalar dependências. Para desenvolvimento, pode utilizar o Live Server no VS Code.
 
 ## Estrutura
 - `index.html`: estrutura e seções.
@@ -25,7 +23,5 @@ Abra `index.html` em um navegador moderno. Não é necessário instalar dependê
 - `js/catalogo.js`: dados, filtros, favoritos e interação com DOM.
 - `assets/`: imagens, vídeos e legendas.
 
-## Acessibilidade e segurança
-Botões nativos, navegação por teclado, `aria-pressed`, `aria-live`, rótulos de formulário e `:focus-visible`. Os cartões são montados sem inserir texto de usuário via `innerHTML`.
 
-**Nota:** os favoritos são mantidos apenas enquanto a página está aberta; a avaliação não é salva nem enviada a um servidor.
+
