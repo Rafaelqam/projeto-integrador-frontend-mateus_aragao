@@ -23,5 +23,6 @@ Projeto Integrador de Desenvolvimento Front-end para Web. Uma wiki dedicada aos 
 - `js/catalogo.js`: dados, filtros, favoritos e interação com DOM.
 - `assets/`: imagens, vídeos e legendas.
 
+## Revisão
 
-
+Revisão feita por Adrian Asaf no dia 18/11/2026: Ficou bom o site, gostei! A página abre sem erro, o formulário tá certinho com label em todos os campos e validação, o vídeo com webm, mp4 e legenda ficou muito bom e o css tá bem organizado. O menu novo ficou legal e o foco aparece bem quando navega pelo teclado. Pra melhorar: o catálogo do catalogo.js não aparece na página porque o index.html não tem a seção com #catalogo-lista, #busca-pokemon e os outros ids, então não aparece nenhum card. Os links "Explorar iniciais" e "Vídeo" do menu não levam pra lugar nenhum, e o formulário não mostra a confirmação porque falta o id="form-avaliacao". Também faltou svg e canvas da aula 5. Os PRs 2, 3 e 4 ainda tão abertos. 8/10
